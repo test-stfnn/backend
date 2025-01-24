@@ -49,19 +49,19 @@ Esto instalará todas las dependencias necesarias para ejecutar la aplicación.
 
 ## Ejecución en desarrollo
 
-- Puedes ejecutar directamente el código de typescript con el comando:
+- Puedes ejecutar directamente el código de Typescript con el comando:
 
 ```bash
 npm run serve
 ```
 
-o primero compilar el código a javascript con el comando:
+o primero compilar el código a Javascript con el comando:
 
 ```bash
 npm run build
 ```
 
-y luego correr el código javascript con:
+y luego correr el código Javascript con:
 
 ```bash
 npm start
@@ -77,3 +77,13 @@ npm run lint
 ```bash
 npm run test
 ```
+
+## Despliegue en EC2, Elastic BeanStalk o Lambda
+
+Estas 3 herramientas se pueden usar para desplegar el servidor compilado a Javascript.
+
+La ventaja de Elastic BeanStalk es que él mismo maneja la infraestructura (EC2, balanceadores de carga, autoescalado) y tiene escalado automático, además de proveer soporte para Node.js con configuraciones predeterminadas.
+
+Por otro lado, con lambda uno no se tiene que preocupar por servidores y solo se paga por el tiempo de ejecución.
+
+Por último, se puede usar una instancia EC2 donde uno puede tener un control completo sobre éste (sistema operativo, dependenvias) para personalizarlo como uno quiera.
