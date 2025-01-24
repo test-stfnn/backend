@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "name": "Libros",
+    "category": "Papelería",
+    "price": 60,
+    "quantity": 34
+  },
+  {
+    "id": 2,
+    "name": "Botellas",
+    "category": "Bebidas",
+    "price": 3,
+    "quantity": 1
+  }
+]
